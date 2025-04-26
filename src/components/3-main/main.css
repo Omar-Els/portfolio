@@ -1,0 +1,144 @@
+/* 
+table of contents :
+1- left section ==> button
+2- right section ==> card
+3- responsive design
+*/
+
+
+main.flex {
+    gap: 2rem;
+    align-items: start;
+}
+
+/* 1- left section ==> button */
+
+main section.left-section.flex {
+    flex-direction: column;
+    gap: 10px;
+}
+
+main section.left-section.flex button {
+    background-color: rgba(36, 37, 46, 1);
+    width: 10rem;
+    padding: 0.75rem 0;
+    text-align: center;
+    font-size: 1.05rem;
+    text-transform: capitalize;
+    opacity: .5;
+    transition: .3s;
+    border-radius: 5px;
+}
+
+main section.left-section.flex button.active {
+    opacity: 1;
+    font-weight: bold;
+    letter-spacing: .6px;
+    padding: .8rem 0;
+    border: 1px solid var(--blue);
+}
+
+.light main section.left-section.flex button.active {
+    border: 1px solid #000;
+}
+
+main section.left-section.flex button:hover {
+    opacity: 1;
+}
+
+
+/* 2- right section ==> card */
+
+main section.right-section.flex {
+    flex-wrap: wrap;
+    flex-grow: 1;
+    row-gap: 2rem;
+    column-gap: 16px;
+    justify-content: center;
+}
+
+.card {
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.16),1px 1px 1px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(93, 188, 252, 0.3);
+    transition: .3s;
+    border-radius: 5px;
+    background-image: linear-gradient(rgba(255,255,255,0.05),rgba(255,255,255,0.05));
+}
+
+.light .card , .light .card:hover {
+    border: none;
+    
+}
+.light .card:hover {
+        background-color: rgba(248, 248, 248);
+}
+
+.card img {
+    border-radius: 5px;
+}
+
+.card:hover {
+    border: 1px solid var(--blue);
+    rotate: 1deg;
+    scale: 1.01;
+    cursor: pointer;
+}
+
+.card .box {
+    padding: 1rem .4rem;
+}
+.card .box .title {
+    color: var(--title);
+    text-transform: capitalize;
+}
+.card .box .sub-title {
+    color: var(--subtitle);
+    font-size: 0.8rem;
+    margin-top: .7rem;
+    margin-bottom: 1.1rem;
+}
+
+.card .box .icons {
+    justify-content: space-between;
+}
+
+.card .icon-github,
+.card .icon-link {
+    font-size: 1.2rem;
+    color: var(--subtitle);
+}
+
+.card .icon-github:hover,
+.card .icon-link:hover {
+    font-size: 1.25rem;
+    color: var(--icon-hover);
+    cursor: pointer;
+}
+
+.card a.link {
+    font-size: .9rem;
+    color: var(--blue);
+    margin-right: 12px;
+}
+
+
+/* 3- responsive design */
+
+@media (max-width: 600px) {
+    main.flex {
+            gap: 2.04rem;
+            align-items: center;
+            flex-direction: column;
+    }
+    main section.left-section.flex {
+        flex-direction: row;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    main section.left-section.flex button {
+    width: 7rem;
+    padding: 0.8rem 0;
+    font-size: .9rem;
+    }
+}

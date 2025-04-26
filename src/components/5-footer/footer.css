@@ -1,0 +1,42 @@
+/* 
+table of contents :
+1- left section ==> 
+2- right section ==> 
+3- responsive design
+*/
+
+/* 1- left section==> */
+
+footer.flex {
+    justify-content: space-between;
+    padding-bottom: 1.9rem;
+}
+
+footer.flex ul.flex {
+    gap: 1rem;
+}
+
+footer.flex ul.flex a {
+    color: var(--subtitle);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+footer.flex ul.flex a:hover {
+    color: var(--blue);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+footer.flex p {
+    color: rgba(113, 113, 122);
+}
+
+
+
+@media (max-width: 800px) {
+    footer.flex {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}

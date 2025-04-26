@@ -1,0 +1,80 @@
+/* 
+table of contents :
+1- left section
+2- right section
+3- responsive design
+*/
+
+
+/* 1- left section */
+
+section.hero {
+    margin-top: 3rem;
+}
+
+section.hero .parent-avatar {
+    align-items: end;
+    gap: .6rem;
+    min-height: 88px;
+}
+
+section.hero .left-section {
+    flex-grow: 1;
+}
+
+section.hero .icon-verified {
+    color: var(--blue);
+    font-size: 1.1rem;
+    margin-bottom: .3rem;
+}
+
+section.hero .avatar {
+    width: 88px;
+    border-radius: 50%;
+    border: 1px solid rgb(203, 200, 200,.586);
+    padding: 1px;
+    box-shadow: 2px 2px 40px rgba(203,200,200,.586) inset;
+}
+
+section.hero h1.title {
+    font-size: 2.85rem;
+    line-height: 3.3rem;
+    margin: 24px 0;
+    color: var(--title);
+}
+
+section.hero p.sub-title {
+    font-size: .9rem;
+    line-height: 1.65rem;
+    margin-bottom: 32px;
+    color: var(--subtitle);
+}
+
+section.hero .all-icons {
+    font-size: 1.3rem;
+    gap: 1.5rem;
+    color: var(--subtitle);
+}
+
+section.hero .all-icons .icon:hover {
+    font-size: 1.4rem;
+    transition: .3s;
+    cursor: pointer;
+    color: var(--icon-hover);
+}
+
+
+
+/* 2- right section ==> animation */
+section.hero .animation {
+    width: 100%;
+    translate: 100px 55px ;
+}
+
+
+/* 3- responsive design */
+@media (max-width: 1100px) {
+    section.hero .animation {
+        display: none;
+    }
+}
