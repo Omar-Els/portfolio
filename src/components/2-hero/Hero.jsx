@@ -32,10 +32,7 @@ const Hero = () => {
           soft ware designer, founder, and amateur astronaut.
         </motion.h1>
         <p className="sub-title">
-          Im Omar Elsayed, a software designer and entrepreneur based in New
-          York City. Im the founder and CEO of planetaria, where we develop
-          technologies that empower regular people to explore space on their own
-          terms.
+          Im Omar Elsayed, a software designer.
         </p>
         <div className="all-icons flex">
           <div className="icon icon-x"></div>
